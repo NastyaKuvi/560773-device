@@ -6,7 +6,233 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <nav class="navigation">
+        <a class="logo">
+          <img src="img/index-logo.svg" alt="DEVICE">
+        </a>
+        <input class="search" type="search">
+        <ul class="user-navigation">
+          <li class="login">Войти</li>
+        </ul>
+        <ul class="shopping-cart">
+          <li class="compare"><a href="#">Сравнить</a></li>
+          <li class="cart"><a href="#">Корзина</a></li>
+        </ul>
+        <p class="goods-catalog">Каталог товаров</p>
+        <ul class="goods-list">
+          <li><a href=#>Виртуальная реальность</a></li>
+          <li><a href=#>Моноподы для селфи</a></li>
+          <li><a href=#>Экшн-камеры</a></li>
+          <li><a href=#>Фитнес браслеты</a></li>
+          <li><a href=#>Умные часы</a></li>
+          <li><a href=#>Квадрокоптеры</a></li>
+        </ul>
+        <ul class="service">
+          <li class="delivery"><a href=#>Доставка</a></li>
+          <li class="guarantee"><a href=#>Гарантия</a></li>
+        </ul>
+        <button class="contacts">Контакты</button>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <h1 class="visually-hidden">DEVICE</h1>
+
+      <section class="new-hot-items">
+
+        <h2 class="visually-hidden">Новинки</h2>
+
+        <input type="radio">
+        <div>
+          <img src="img/selfie-stick" alt="Селфи-палка">
+          <h3>Делай селфи,<br>как Бен Стиллер!</h3>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <button>Подробнее</button>
+          <table class="benefits-info">
+            <tr class="value">
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr class="key">
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+            </tr>
+          </table>
+        </div>
+
+        <input type="radio">
+        <div>
+          <img src="img/fitness-bracelet" alt="Фитнес-браслет">
+          <h3>Худеем<br>правильно!</h3>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <button>Подробнее</button>
+          <table class="benefits-info">
+            <tr class="value">
+              <td>48 часов</td>
+            </tr>
+            <tr class="key">
+                <td>Без подзарядки</td>
+            </tr>
+          </table>
+        </div>
+
+        <input type="radio">
+        <div>
+          <img src="img/quadrocopter" alt="Квадрокоптер">
+          <h3>Порхает как бабочка,<br>жалит как пчела!</h3>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
+          <button>Подробнее</button>
+          <table class="benefits-info">
+            <tr class="value">
+              <td>800 м</td>
+              <td>50 м</td>
+            </tr>
+            <tr class="key">
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
+            </tr>
+          </table>
+        </div>
+
+      </section>
+
+      <section class="popular-items">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <ul>
+          <li>
+            <a href=#>
+              <img src="img/vr-logo" alt="Виртуальная реальность">
+              <p>Виртуальная реальность</p>
+            </a>
+          </li>
+          <li>
+            <a href=#>
+              <img src="img/selfie-mono-logo" alt="Моноподы для селфи">
+              <p>Моноподы для селфи</p>
+            </a>
+          </li>
+          <li>
+            <a href=#>
+              <img src="img/camera-logo" alt="Экшн-камеры">
+              <p>Экшн-камеры</p>
+            </a>
+          </li>
+          <li>
+            <a href=#>
+              <img src="img/bracelet-logo" alt="Фитнес-браслеты">
+              <p>Фитнес-браслеты</p>
+            </a>
+          </li>
+          <li>
+            <a href=#>
+              <img src="img/smart-clock-logo" alt="Умные часы">
+              <p>Умные часы</p>
+            </a>
+          </li>
+          <li>
+            <a href=#>
+              <img src="img/quadrocopter-logo" alt="Квадрокоптеры">
+              <p>Квадрокоптеры</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="service-section">
+        <h2 class="visually-hidden">Сервис</h2>
+
+        <input type="button" value="Доставка">
+        <div class="delivery">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+
+        <input type="button" value="Гарантия">
+        <div class="delivery">
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+        </div>
+
+        <input type="button" value="Кредит">
+        <div class="delivery">
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </div>
+      </section>
+
+      <section class="companies-logo">
+        <h2 class="visually-hidden">Представленные компании</h2>
+        <img src="img/logo-1" alt="DJI">
+        <img src="img/logo-2" alt="SP gadgets">
+        <img src="img/logo-3" alt="Go Pro">
+        <img src="img/logo-4" alt="Vive">
+      </section>
+
+      <section class="about-us">
+        <h3>О нас</h3>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="transport-companies">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <button>Подробнее о нас</button>
+      </section>
+
+      <section class="contacts">
+        <h3>Контакты</h3>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a href=#>
+          <img src="img/addres-map" alt="Карта">
+        </a>
+        <button>Напишите нам</button>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <a class="logo">
+        <img src="img/index-logo.svg" alt="DEVICE">
+      </a>
+      <ul class="user-navigation">
+        <li class="login">Войти</li>
+      </ul>
+      <ul class="shopping-cart">
+        <li class="compare"><a href="#">Сравнить</a></li>
+        <li class="cart"><a href="#">Корзина</a></li>
+      </ul>
+      <p class="adress">г. Москва, ул. Строителей, 15</p>
+      <ul class="service">
+        <li class="delivery"><a href=#>Доставка</a></li>
+        <li class="guarantee"><a href=#>Гарантия</a></li>
+      </ul>
+      <button class="contacts">Контакты</button>
+      <p class="number">Тел.: +7 (495) 495-95-95</p>
+      <div class="social">
+        <ul>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
+          <li><a class="social-button" href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/htmlacademy-logo" alt="html academy">
+      </a>
+    </footer>
+
+    <section class="modal-form-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <!-- place for form in future-->
+    </section>
+
+    <section class="modal-map">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map-content"></div>
+    </section>
 
   </body>
 </html>
