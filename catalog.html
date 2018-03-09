@@ -7,7 +7,7 @@
   <body>
 
     <header class="header container">
-      <nav class="navigation">
+      <nav class="main-navigation">
         <a class="logo" href="index.html">
           <img src="img/logo.svg" alt="DEVICE">
         </a>
@@ -33,42 +33,37 @@
 
         <button class="goods-catalog navigation-item">Каталог товаров</button>
 
-        <ul class="goods-list">
-          <li class="good-item">
-            <a href="virtual-reality.html">Виртуальная реальность</a>
-          </li>
-          <li class="good-item">
-            <a href="selfie-monopods.html">Моноподы для селфи</a>
-          </li>
-          <li class="good-item">
-            <a href="action-cameras.html">Экшн-камеры</a>
-          </li>
-          <li class="good-item">
-            <a href="fitness-bracelets.html">Фитнес браслеты</a>
-          </li>
-          <li class="good-item">
-            <a href="smart-clocks.html">Умные часы</a>
-          </li>
-          <li class="good-item">
-            <a href="quadrocopters.html">Квадрокоптеры</a>
-          </li>
-        </ul>
+        <div class="goods-list">
+          <nav class="goods-navigation">
+            <a class="goods-item" href="virtual-reality.html">Виртуальная реальность</a>
+            <a class="goods-item" href="fitness-bracelets.html">Фитнес браслеты</a>
+            <a class="goods-item" href="quadrocopters.html">Квадрокоптеры</a>
+          </nav>
+          <nav class="goods-navigation">
+            <a class="goods-item" href="selfie-monopods.html">Моноподы для селфи</a>
+            <a class="goods-item" href="smart-clocks.html">Умные часы</a>
+          </nav>
+          <nav class="goods-navigation">
+            <a class="goods-item" href="action-cameras.html">Экшн-камеры</a>
+          </nav>
+        </div>
 
-        <ul class="service">
-          <li class="service-item navigation-item">
+        <ul class="information">
+          <li class="information-card navigation-item">
             <a href="delivery.html">Доставка</a>
           </li>
-          <li class="service-item navigation-item">
-            <a href="quarantee.html">Гарантия</a>
+          <li class="information-card navigation-item">
+            <a href="guarantee.html">Гарантия</a>
+          </li>
+          <li class="information-card navigation-item">
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul>
-
-        <a class="contacts navigation-item" href="contacts.html">Контакты</a>
       </nav>
     </header>
 
     <main class="container">
-      <h2>Моноподы для селфи</h2>
+      <h2 class="page-title">Моноподы для селфи</h2>
 
         <ul class="breadcrumbs">
           <li><a href="index.html">Главная</a></li>
@@ -101,8 +96,8 @@
               <span class="item-price">500 руб.</span>
             </p>
             <div class="item-additional">
-              <a href="?cart-item=selfie-2">В корзину</a>
-              <a href="?compare=selfie-2">Добавить к сравнению</a>
+              <a href="?cart-item=selfie-1">В корзину</a>
+              <a href="?compare=selfie-1">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -123,8 +118,8 @@
               <span class="item-price">2 500 руб.</span>
             </p>
             <div class="item-additional">
-              <a href="?cart-item=selfie-2">В корзину</a>
-              <a href="?compare=selfie-2">Добавить к сравнению</a>
+              <a href="?cart-item=selfie-3">В корзину</a>
+              <a href="?compare=selfie-3">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -134,8 +129,8 @@
               <span class="item-price">4 900 руб.</span>
             </p>
             <div class="item-additional">
-              <a href="?cart-item=selfie-2">В корзину</a>
-              <a href="?compare=selfie-2">Добавить к сравнению</a>
+              <a href="?cart-item=selfie-4">В корзину</a>
+              <a href="?compare=selfie-4">Добавить к сравнению</a>
             </div>
           </li>
         </ul>
@@ -178,16 +173,18 @@
 
           <p class="adress">г. Москва, ул. Строителей, 15</p>
 
-          <ul class="service">
-            <li class="service-item navigation-item">
-              <a href="delivery.html">Доставка</a>
-            </li>
-            <li class="service-item navigation-item">
-              <a href="quarantee.html">Гарантия</a>
-            </li>
-          </ul>
+        <ul class="information">
+          <li class="information-card navigation-item">
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li class="information-card navigation-item">
+            <a href="guarantee.html">Гарантия</a>
+          </li>
+          <li class="information-card navigation-item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
 
-          <a class="contacts navigation-item" href="contacts.html">Контакты</a>
           <p class="number">Тел.: +7 (495) 495-95-95</p>
           <div class="social">
             <ul>

@@ -7,7 +7,7 @@
   <body>
 
     <header class="header container">
-      <nav class="navigation">
+      <nav class="main-navigation">
         <img src="img/logo.svg" alt="DEVICE">
         <input class="search" type="search">
 
@@ -28,37 +28,32 @@
 
         <button class="goods-catalog navigation-item">Каталог товаров</button>
 
-        <ul class="goods-list">
-          <li class="good-item">
-            <a href="virtual-reality.html">Виртуальная реальность</a>
-          </li>
-          <li class="good-item">
-            <a href="selfie-monopods.html">Моноподы для селфи</a>
-          </li>
-          <li class="good-item">
-            <a href="action-cameras.html">Экшн-камеры</a>
-          </li>
-          <li class="good-item">
-            <a href="fitness-bracelets.html">Фитнес браслеты</a>
-          </li>
-          <li class="good-item">
-            <a href="smart-clocks.html">Умные часы</a>
-          </li>
-          <li class="good-item">
-            <a href="quadrocopters.html">Квадрокоптеры</a>
-          </li>
-        </ul>
+        <div class="goods-list">
+          <nav class="goods-navigation">
+            <a class="goods-item" href="virtual-reality.html">Виртуальная реальность</a>
+            <a class="goods-item" href="fitness-bracelets.html">Фитнес браслеты</a>
+            <a class="goods-item" href="quadrocopters.html">Квадрокоптеры</a>
+          </nav>
+          <nav class="goods-navigation">
+            <a class="goods-item" href="selfie-monopods.html">Моноподы для селфи</a>
+            <a class="goods-item" href="smart-clocks.html">Умные часы</a>
+          </nav>
+          <nav class="goods-navigation">
+            <a class="goods-item" href="action-cameras.html">Экшн-камеры</a>
+          </nav>
+        </div>
 
-        <ul class="service">
-          <li class="service-card navigation-item">
+        <ul class="information">
+          <li class="information-card navigation-item">
             <a href="delivery.html">Доставка</a>
           </li>
-          <li class="service-card navigation-item">
+          <li class="information-card navigation-item">
             <a href="guarantee.html">Гарантия</a>
           </li>
+          <li class="information-card navigation-item">
+            <a href="contacts.html">Контакты</a>
+          </li>
         </ul>
-
-        <a class="contacts navigation-item" href="contacts.html">Контакты</a>
       </nav>
     </header>
 
@@ -66,17 +61,17 @@
 
       <h1 class="visually-hidden">DEVICE</h1>
 
-      <section class="new-hot-items">
+      <section class="new-items">
 
         <h2 class="visually-hidden">Новинки</h2>
 
         <input type="radio">
-        <div>
-          <img src="img/selfie-stick" alt="Селфи-палка">
-          <h3>Делай селфи,<br>как Бен Стиллер!</h3>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <button>Подробнее</button>
-          <table class="benefits-info">
+        <div class="new-item">
+          <img class="new-item-image" src="img/selfie-stick" alt="Селфи-палка">
+          <h3 class="new-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
+          <p class="new-item-body">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <button class="primary-button">Подробнее</button>
+          <table class="new-item-benefits">
             <tr class="value">
               <td>8,5 м</td>
               <td>5 кг</td>
@@ -91,12 +86,12 @@
         </div>
 
         <input type="radio">
-        <div>
-          <img src="img/fitness-bracelet" alt="Фитнес-браслет">
-          <h3>Худеем<br>правильно!</h3>
-          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <button>Подробнее</button>
-          <table class="benefits-info">
+        <div class="new-item">
+          <img class="new-item-image" src="img/fitness-bracelet" alt="Фитнес-браслет">
+          <h3 class="new-item-title">Худеем<br>правильно!</h3>
+          <p class="new-item-body">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <button class="primary-button">Подробнее</button>
+          <table class="new-item-benefits">
             <tr class="value">
               <td>48 часов</td>
             </tr>
@@ -107,12 +102,12 @@
         </div>
 
         <input type="radio">
-        <div>
-          <img src="img/quadrocopter" alt="Квадрокоптер">
-          <h3>Порхает как бабочка,<br>жалит как пчела!</h3>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
-          <button>Подробнее</button>
-          <table class="benefits-info">
+        <div class="new-item">
+          <img class="new-item-image" src="img/quadrocopter" alt="Квадрокоптер">
+          <h3 class="new-item-title">Порхает как бабочка,<br>жалит как пчела!</h3>
+          <p class="new-item-body">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
+          <button class="primary-button">Подробнее</button>
+          <table class="new-item-benefits">
             <tr class="value">
               <td>800 м</td>
               <td>50 м</td>
@@ -126,43 +121,43 @@
 
       </section>
 
-      <section class="popular-items">
+      <section class="popular">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <ul>
-          <li>
+        <ul class="popular-items">
+          <li class="popular-item">
             <a href="virtual-reality.html">
-              <img src="img/vr-logo" alt="Виртуальная реальность">
-              <p>Виртуальная реальность</p>
+              <img class="popular-item-image" src="img/vr-logo" alt="Виртуальная реальность">
+              <p class="popular-item-title">Виртуальная реальность</p>
             </a>
           </li>
-          <li>
+          <li class="popular-item">
             <a href="selfie-monopods.html">
-              <img src="img/selfie-mono-logo" alt="Моноподы для селфи">
-              <p>Моноподы для селфи</p>
+              <img class="popular-item-image" src="img/selfie-mono-logo" alt="Моноподы для селфи">
+              <p class="popular-item-title">Моноподы для селфи</p>
             </a>
           </li>
-          <li>
+          <li class="popular-item">
             <a href="action-cameras.html">
-              <img src="img/camera-logo" alt="Экшн-камеры">
-              <p>Экшн-камеры</p>
+              <img class="popular-item-image" src="img/camera-logo" alt="Экшн-камеры">
+              <p class="popular-item-title">Экшн-камеры</p>
             </a>
           </li>
-          <li>
+          <li class="popular-item">
             <a href="fitness-bracelets.html">
-              <img src="img/bracelet-logo" alt="Фитнес-браслеты">
-              <p>Фитнес-браслеты</p>
+              <img class="popular-item-image" src="img/bracelet-logo" alt="Фитнес-браслеты">
+              <p class="popular-item-title">Фитнес-браслеты</p>
             </a>
           </li>
-          <li>
+          <li class="popular-item">
             <a href="smart-clocks.html">
-              <img src="img/smart-clock-logo" alt="Умные часы">
-              <p>Умные часы</p>
+              <img class="popular-item-image" src="img/smart-clock-logo" alt="Умные часы">
+              <p class="popular-item-title">Умные часы</p>
             </a>
           </li>
-          <li>
+          <li class="popular-item">
             <a href="quadrocopters.html">
-              <img src="img/quadrocopter-logo" alt="Квадрокоптеры">
-              <p>Квадрокоптеры</p>
+              <img class="popular-item-image" src="img/quadrocopter-logo" alt="Квадрокоптеры">
+              <p class="popular-item-title">Квадрокоптеры</p>
             </a>
           </li>
         </ul>
@@ -171,52 +166,65 @@
       <section class="service-section">
         <h2 class="visually-hidden">Сервис</h2>
 
-        <input type="button" value="Доставка">
+        <input class="service-radio" type="radio" id="service-delivery">
+        <label class="primary-button" for="service-delivery">Доставка</label>
         <div class="service-card">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <h3 class="service-card-title">Доставка</h3>
+          <p class="service-card-body">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
 
-        <input type="button" value="Гарантия">
+        <input class="service-radio"  type="radio" id="service-guarantee">
+        <label class="primary-button" for="service-guarantee">Гарантия</label>
         <div class="service-card">
-          <h3>Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+          <h3 class="service-card-title">Гарантия</h3>
+          <p class="service-card-body">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
         </div>
 
-        <input type="button" value="Кредит">
+        <input class="service-radio" type="radio" id="service-credit">
+        <label class="primary-button" for="service-credit">Кредит</label>
         <div class="service-card">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <h3 class="service-card-title">Кредит</h3>
+          <p class="service-card-body">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
       </section>
 
-      <section class="companies-logo">
+      <section class="partners">
         <h2 class="visually-hidden">Представленные компании</h2>
-        <img src="img/logo-1" alt="DJI">
-        <img src="img/logo-2" alt="SP gadgets">
-        <img src="img/logo-3" alt="Go Pro">
-        <img src="img/logo-4" alt="Vive">
+        <ul class="partners-list">
+          <li class="partner-logo">
+            <img src="img/logo-1" alt="DJI">
+          </li>
+          <li class="partner-logo">
+            <img src="img/logo-2" alt="SP gadgets">
+          </li>
+          <li class="partner-logo">
+            <img src="img/logo-3" alt="Go Pro">
+          </li>
+          <li class="partner-logo">
+            <img src="img/logo-4" alt="Vive">
+          </li>
+        </ul>
       </section>
 
       <section class="about-us">
-        <h3>О нас</h3>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <h3 class="about-title">О нас</h3>
+        <p class="about-body">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-body">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="transport-companies">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+          <li><b>Деловые Линии</b></li>
+          <li><b>Автотрейдинг</b></li>
+          <li><b>ЖелДорЭкспедиция</b></li>
         </ul>
-        <button>Подробнее о нас</button>
+        <button class="primary-button">Подробнее о нас</button>
       </section>
 
       <section class="contacts">
-        <h3>Контакты</h3>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="adress.html">
+        <h3 class="contacts-title">Контакты</h3>
+        <p class="contacts-body">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a class="contacts-map" href="adress.html">
           <img src="img/addres-map" alt="Карта">
         </a>
-        <button>Напишите нам</button>
+        <button class="primary-button">Напишите нам</button>
       </section>
     </main>
 
@@ -241,12 +249,15 @@
 
         <p class="adress">г. Москва, ул. Строителей, 15</p>
 
-        <ul class="service">
-          <li class="service-item navigation-item">
+        <ul class="information">
+          <li class="information-card navigation-item">
             <a href="delivery.html">Доставка</a>
           </li>
-          <li class="service-item navigation-item">
-            <a href="quarantee.html">Гарантия</a>
+          <li class="information-card navigation-item">
+            <a href="guarantee.html">Гарантия</a>
+          </li>
+          <li class="information-card navigation-item">
+            <a href="contacts.html">Контакты</a>
           </li>
         </ul>
 
