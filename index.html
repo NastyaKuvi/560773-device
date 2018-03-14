@@ -9,7 +9,12 @@
     <header class="header container">
       <nav class="main-navigation">
         <img src="img/logo.svg" width="165" height="35" alt="DEVICE">
-        <input class="search" type="search">
+        <form class="search-form" method="get">
+          <p>
+            <input class="search" type="search" placeholder="Поиск по сайту">
+            <button class="search-btn visually-hidden" type="submit">Найти</button>
+          </p>
+        </form>
 
         <ul class="user-navigation">
           <li class="user-login">
@@ -26,7 +31,7 @@
           </li>
         </ul>
 
-        <button class="goods-catalog navigation-item">Каталог товаров</button>
+        <a class="goods-catalog navigation-item" href="catalog.html">Каталог товаров</a>
 
         <div class="goods-list">
           <nav class="goods-navigation">
@@ -65,7 +70,7 @@
 
         <h2 class="visually-hidden">Новинки</h2>
 
-        <input type="radio">
+        <input type="radio" name="new-item" aria-label="Новая селфи-палка">
         <div class="new-item">
           <img class="new-item-image" src="img/new-selfie.png" width="526" height="497" alt="Селфи-палка">
           <h3 class="new-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
@@ -85,7 +90,7 @@
           </table>
         </div>
 
-        <input type="radio">
+        <input type="radio" name="new-item" aria-label="Новый фитнес-браслет">
         <div class="new-item">
           <img class="new-item-image" src="img/new-bracelet.png" width="526" height="497" alt="Фитнес-браслет">
           <h3 class="new-item-title">Худеем<br>правильно!</h3>
@@ -101,7 +106,7 @@
           </table>
         </div>
 
-        <input type="radio">
+        <input type="radio" name="new-item" aria-label="Новый квадрокоптер">
         <div class="new-item">
           <img class="new-item-image" src="img/new-quadro.png" width="526" height="497" alt="Квадрокоптер">
           <h3 class="new-item-title">Порхает как бабочка,<br>жалит как пчела!</h3>
@@ -167,21 +172,21 @@
         <div class="container">
           <h2 class="visually-hidden">Сервис</h2>
 
-          <input class="service-radio" type="radio" id="service-delivery">
+          <input class="service-radio" type="radio" id="service-delivery" name="service-radio">
           <label class="primary-button" for="service-delivery">Доставка</label>
           <div class="service-card">
             <h3 class="service-card-title">Доставка</h3>
             <p class="service-card-body">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
 
-          <input class="service-radio"  type="radio" id="service-guarantee">
+          <input class="service-radio"  type="radio" id="service-guarantee" name="service-radio">
           <label class="primary-button" for="service-guarantee">Гарантия</label>
           <div class="service-card">
             <h3 class="service-card-title">Гарантия</h3>
             <p class="service-card-body">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
           </div>
 
-          <input class="service-radio" type="radio" id="service-credit">
+          <input class="service-radio" type="radio" id="service-credit" name="service-radio">
           <label class="primary-button" for="service-credit">Кредит</label>
           <div class="service-card">
             <h3 class="service-card-title">Кредит</h3>
@@ -224,7 +229,7 @@
         <h3 class="contacts-title">Контакты</h3>
         <p class="contacts-body">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a class="contacts-map" href="adress.html">
-          <img src="img/map.jpg" alt="Карта">
+          <img src="img/map.jpg" width="560" height="222" alt="Карта">
         </a>
         <button class="primary-button">Напишите нам</button>
       </section>
@@ -278,14 +283,31 @@
       </div>
     </footer>
 
-    <section class="modal-form-write-us">
+    <section class="modal modal-form-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <!-- place for form in future-->
+      <form class="write-us-form" method="post">
+        <p>
+          <label for="write-us-user-name">Ваше имя:</label>
+          <input type="text" id="write-us-user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="write-us-user-email">Ваш e-mail:</label>
+          <input type="email" id="write-us-user-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="write-us-user-letter">Текст письма:</label>
+          <textarea id="write-us-user-letter" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="primary-button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <section class="modal-map">
-        <h2 class="visually-hidden">Карта</h2>
-        <div class="map-content"></div>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map-big.jpg" width="960" height="559"
+          alt="Мы находимся в г. Москва, ул. Строителей, 15">
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 
   </body>

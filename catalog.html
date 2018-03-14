@@ -11,7 +11,12 @@
         <a class="logo" href="index.html">
           <img src="img/logo.svg" width="165" height="35" alt="DEVICE">
         </a>
-        <input class="search" type="search">
+        <form class="search-form" method="get">
+          <p>
+            <input class="search" type="search" placeholder="Поиск по сайту">
+            <button class="search-btn visually-hidden" type="submit">Найти</button>
+          </p>
+        </form>
 
         <ul class="user-navigation">
           <li class="user-name">
@@ -72,16 +77,79 @@
         </ul>
 
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Place-for-form -->
+        <h4 class="filter-title">Фильтр:</h4>
+        <form class="filter-form" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <div class="slider">
+              <div class="left-slide">
+                <button class="slider-limit" aria-label="Цена от"></button>
+                <p class="slider-label">от 0</p>
+              </div>
+              <div class="right-slide">
+                <button class="slider-limit" aria-label="Цена до"></button>
+                <p class="slider-label">до 5000</p>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="black-color" name="black-color" checked>
+                <label for="black-color">Черный</label>
+              </li>
+              <li>
+                <input type="checkbox" id="white-color" name="white-color">
+                <label for="white-color">Белый</label></li>
+              <li>
+                <input type="checkbox" id="blue-color" name="blue-color" checked>
+                <label for="blue-color">Синий</label></li>
+              <li>
+                <input type="checkbox" id="red-color" name="red-color" checked>
+                <label for="red-color">Красный</label></li>
+              <li>
+                <input type="checkbox" id="pink-color" name="pink-color">
+                <label for="pink-color">Розовый</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <input type="radio" id="bluetooth-yes" name="bluetooth" aria-label="есть bluetooth" checked>
+                <label for="bluetooth-yes">Есть</label>
+              </li>
+              <li>
+                <input type="radio" id="bluetooth-no" name="bluetooth" aria-label="нет bluetooth">
+                <label for="bluetooth-no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="primary-button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="sorting">
-        <h2 class="visually-hidden">Сортировка</h2>
+        <h4 class="sorting-title">Сортировка:</h4>
         <ul class="sort-types">
-          <li class="selected">По цене</li>
-          <li>По типу</li>
-          <li>По популярности</li>
+          <li class="selected">
+            <a class="sort-type" href="?sort=price">По цене</a>
+          </li>
+          <li>
+            <a class="sort-type" href="?sort=type">По типу</a>
+          </li>
+          <li>
+            <a class="sort-type" href="?sort=popular">По популярности</a>
+          </li>
+        </ul>
+        <ul class="sort-rules">
+          <li>
+            <a class="sort-order" href="?sort-order=ascending">По возрастанию</a>
+          </li>
+          <li class="selected">
+            <a class="sort-order" href="?sort-order=descending">По убыванию</a>
+          </li>
         </ul>
       </section>
 
@@ -136,13 +204,13 @@
         </ul>
 
         <div class="pagination">
-          <span>Назад</span>
+          <button class="back-button" type="button">Назад</button>
           <ul class="pagination-list">
-            <li class="pagination-item"><a href="#">1</a></li>
-            <li class="pagination-item selected"><a>2</a></li>
+            <li class="pagination-item selected"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
           </ul>
-          <span>Вперед</span>
+          <button class="back-button" type="button">Вперед</button>
         </div>
       </section>
     </main>
