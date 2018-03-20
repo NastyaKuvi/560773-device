@@ -79,14 +79,12 @@ a {
   color: rgb(0, 0, 0);
 }
 
-.open-sans-light {
+.search {
   font-family: 'OpenSans-light', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-}
 
-.search {
   background-color: transparent;
   border: none;
 }
@@ -109,6 +107,11 @@ a {
 }
 
 .search-btn {
+  font-family: 'OpenSans-light', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+
   background-color: transparent;
   border: 2px solid rgb(0, 0, 0);
 }
@@ -128,6 +131,14 @@ a {
 }
 
 .user,
+.shopping {
+  font-family: 'OpenSans-light', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.user,
 .shopping,
 .information {
   list-style: none;
@@ -140,7 +151,10 @@ a {
 }
 
 .goods-navigation {
+  font-family: 'OpenSans-light', Arial, sans-serif;
+  font-size: 15px;
   line-height: 36px;
+  font-weight: 300;
 }
 
 .navigation-item:hover,
@@ -177,6 +191,13 @@ a {
 .new-item-title {
   font-size: 47px;
   line-height: 56px;
+}
+
+.new-item-body {
+  font-family: 'OpenSans-light', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 .new-item-benefits .value {
@@ -247,6 +268,15 @@ a {
   line-height: 48px;
 }
 
+.service-card-body,
+.about-body,
+.contacts-body {
+  font-family: 'OpenSans-light', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
 .brands-list {
   list-style: none;
 }
@@ -295,6 +325,14 @@ a {
 
 .social-button:active {
   opacity: 0.1;
+}
+
+.adress,
+.phone-number {
+  font-family: 'OpenSans-light', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
 }
 
 .footer .user-interaction,
