@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -11,29 +12,29 @@
         <img src="img/logo.svg" width="165" height="35" alt="DEVICE">
         <form class="search-form" method="get">
           <p>
-            <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="search-btn visually-hidden" type="submit">Найти</button>
+            <input class="search open-sans-light" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="search-btn open-sans-light" type="submit">Найти</button>
           </p>
         </form>
 
-        <ul class="user-navigation">
+        <ul class="user open-sans-light">
           <li class="user-login">
-            <a href="login.html">Войти</a>
+            <a class="navigation-item" href="login.html">Войти</a>
           </li>
         </ul>
 
-        <ul class="shopping">
+        <ul class="shopping open-sans-light">
           <li class="shopping-item">
-            <a href="compare.html">Сравнить</a>
+            <a class="navigation-item" href="compare.html">Сравнить</a>
           </li>
           <li class="shopping-item">
-            <a href="cart.html">Корзина</a>
+            <a class="navigation-item" href="cart.html">Корзина</a>
           </li>
         </ul>
 
-        <a class="goods-catalog navigation-item" href="catalog.html">Каталог товаров</a>
+        <a class="navigation-item goods-catalog" href="catalog.html">Каталог товаров</a>
 
-        <div class="goods-list">
+        <div class="goods-list open-sans-light">
           <nav class="goods-navigation">
             <a class="goods-item" href="virtual-reality.html">Виртуальная реальность</a>
             <a class="goods-item" href="fitness-bracelets.html">Фитнес браслеты</a>
@@ -49,14 +50,14 @@
         </div>
 
         <ul class="information">
-          <li class="information-card navigation-item">
-            <a href="delivery.html">Доставка</a>
+          <li class="information-card">
+            <a class="navigation-item" href="delivery.html">Доставка</a>
           </li>
-          <li class="information-card navigation-item">
-            <a href="guarantee.html">Гарантия</a>
+          <li class="information-card">
+            <a class="navigation-item" href="guarantee.html">Гарантия</a>
           </li>
-          <li class="information-card navigation-item">
-            <a href="contacts.html">Контакты</a>
+          <li class="information-card">
+            <a class="navigation-item" href="contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -64,7 +65,7 @@
 
     <main class="main-content">
 
-      <h1 class="visually-hidden">DEVICE</h1>
+      <h1 class="visually-hidden">Device</h1>
 
       <section class="new-items container">
 
@@ -74,7 +75,7 @@
         <div class="new-item">
           <img class="new-item-image" src="img/new-selfie.png" width="526" height="497" alt="Селфи-палка">
           <h3 class="new-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
-          <p class="new-item-body">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <p class="new-item-body open-sans-light">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <button class="primary-button">Подробнее</button>
           <table class="new-item-benefits">
             <tr class="value">
@@ -83,9 +84,9 @@
               <td>Карбон</td>
             </tr>
             <tr class="key">
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
             </tr>
           </table>
         </div>
@@ -94,14 +95,14 @@
         <div class="new-item">
           <img class="new-item-image" src="img/new-bracelet.png" width="526" height="497" alt="Фитнес-браслет">
           <h3 class="new-item-title">Худеем<br>правильно!</h3>
-          <p class="new-item-body">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <p class="new-item-body open-sans-light">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <button class="primary-button">Подробнее</button>
           <table class="new-item-benefits">
             <tr class="value">
               <td>48 часов</td>
             </tr>
             <tr class="key">
-                <td>Без подзарядки</td>
+              <td>Без подзарядки</td>
             </tr>
           </table>
         </div>
@@ -110,7 +111,7 @@
         <div class="new-item">
           <img class="new-item-image" src="img/new-quadro.png" width="526" height="497" alt="Квадрокоптер">
           <h3 class="new-item-title">Порхает как бабочка,<br>жалит как пчела!</h3>
-          <p class="new-item-body">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
+          <p class="new-item-body open-sans-light">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
           <button class="primary-button">Подробнее</button>
           <table class="new-item-benefits">
             <tr class="value">
@@ -118,8 +119,8 @@
               <td>50 м</td>
             </tr>
             <tr class="key">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
+              <td>Дальность полета</td>
+              <td>Радиус поражения</td>
             </tr>
           </table>
         </div>
@@ -131,37 +132,49 @@
         <ul class="popular-items">
           <li class="popular-item">
             <a href="virtual-reality.html">
-              <img class="popular-item-image" src="img/popular-vr.svg" width="97" height="55" alt="Виртуальная реальность">
+              <div class="popular-item-image-cont">
+                <img class="popular-item-image" src="img/popular-vr.svg" width="97" height="55" alt="Виртуальная реальность">
+              </div>
               <p class="popular-item-title">Виртуальная реальность</p>
             </a>
           </li>
           <li class="popular-item">
             <a href="selfie-monopods.html">
-              <img class="popular-item-image" src="img/popular-monos.svg" width="86" height="117" alt="Моноподы для селфи">
+              <div class="popular-item-image-cont">
+                <img class="popular-item-image" src="img/popular-monos.svg" width="86" height="117" alt="Моноподы для селфи">
+              </div>
               <p class="popular-item-title">Моноподы для селфи</p>
             </a>
           </li>
           <li class="popular-item">
             <a href="action-cameras.html">
-              <img class="popular-item-image" src="img/popular-cameras.svg" width="71" height="87" alt="Экшн-камеры">
+              <div class="popular-item-image-cont">
+                <img class="popular-item-image" src="img/popular-cameras.svg" width="71" height="87" alt="Экшн-камеры">
+              </div>
               <p class="popular-item-title">Экшн-камеры</p>
             </a>
           </li>
           <li class="popular-item">
             <a href="fitness-bracelets.html">
-              <img class="popular-item-image" src="img/popular-bracelets.svg" width="107" height="65" alt="Фитнес-браслеты">
+              <div class="popular-item-image-cont">
+                <img class="popular-item-image" src="img/popular-bracelets.svg" width="107" height="65" alt="Фитнес-браслеты">
+              </div>
               <p class="popular-item-title">Фитнес-браслеты</p>
             </a>
           </li>
           <li class="popular-item">
             <a href="smart-clocks.html">
-              <img class="popular-item-image" src="img/popular-clocks.svg" width="56" height="98" alt="Умные часы">
+              <div class="popular-item-image-cont">
+                <img class="popular-item-image" src="img/popular-clocks.svg" width="56" height="98" alt="Умные часы">
+              </div>
               <p class="popular-item-title">Умные часы</p>
             </a>
           </li>
           <li class="popular-item">
             <a href="quadrocopters.html">
-              <img class="popular-item-image" src="img/popular-quadros.svg" width="132" height="69" alt="Квадрокоптеры">
+              <div class="popular-item-image-cont">
+                <img class="popular-item-image" src="img/popular-quadros.svg" width="132" height="69" alt="Квадрокоптеры">
+              </div>
               <p class="popular-item-title">Квадрокоптеры</p>
             </a>
           </li>
@@ -171,43 +184,41 @@
       <section class="service">
         <div class="container">
           <h2 class="visually-hidden">Сервис</h2>
-
-          <input class="service-radio" type="radio" name="service-radio" id="service-delivery">
-          <label class="primary-button" for="service-delivery">Доставка</label>
-          <div class="service-card">
-            <h3 class="service-card-title">Доставка</h3>
-            <p class="service-card-body">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <div class="service-items">
+            <button class="primary-button service-button selected" type="button">Доставка</button>
+            <button class="primary-button service-button" type="button">Гарантия</button>
+            <button class="primary-button service-button" type="button">Кредит</button>
           </div>
-
-          <input class="service-radio" type="radio" name="service-radio" id="service-guarantee">
-          <label class="primary-button" for="service-guarantee">Гарантия</label>
-          <div class="service-card">
-            <h3 class="service-card-title">Гарантия</h3>
-            <p class="service-card-body">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
-          </div>
-
-          <input class="service-radio" type="radio" name="service-radio" id="service-credit">
-          <label class="primary-button" for="service-credit">Кредит</label>
-          <div class="service-card">
-            <h3 class="service-card-title">Кредит</h3>
-            <p class="service-card-body">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <div class="service-descriptions">
+            <div class="service-card selected">
+              <h3 class="service-card-title">Доставка</h3>
+              <p class="service-card-body open-sans-light">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card-title">Гарантия</h3>
+              <p class="service-card-body open-sans-light">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            </div>
+            <div class="service-card">
+              <h3 class="service-card-title">Кредит</h3>
+              <p class="service-card-body open-sans-light">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="partners container">
+      <section class="brands container">
         <h2 class="visually-hidden">Представленные компании</h2>
-        <ul class="partners-list">
-          <li class="partner-logo">
+        <ul class="brands-list">
+          <li class="brand-logo brand-logo-1">
             <img src="img/partner-logo-1.jpg" width="260" height="100" alt="DJI">
           </li>
-          <li class="partner-logo">
+          <li class="brand-logo">
             <img src="img/partner-logo-2.jpg" width="260" height="100" alt="SP gadgets">
           </li>
-          <li class="partner-logo">
+          <li class="brand-logo">
             <img src="img/partner-logo-3.jpg" width="260" height="100" alt="Go Pro">
           </li>
-          <li class="partner-logo">
+          <li class="brand-logo">
             <img src="img/partner-logo-4.jpg" width="260" height="100" alt="Vive">
           </li>
         </ul>
@@ -215,8 +226,8 @@
 
       <section class="about-us container">
         <h3 class="about-title">О нас</h3>
-        <p class="about-body">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about-body">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <p class="about-body open-sans-light">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-body open-sans-light">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="transport-companies">
           <li><b>Деловые Линии</b></li>
           <li><b>Автотрейдинг</b></li>
@@ -227,7 +238,7 @@
 
       <section class="contacts container">
         <h3 class="contacts-title">Контакты</h3>
-        <p class="contacts-body">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p class="contacts-body open-sans-light">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a class="contacts-map" href="adress.html">
           <img src="img/map.jpg" width="560" height="222" alt="Карта">
         </a>
@@ -237,40 +248,40 @@
 
     <footer class="footer">
       <div class="container">
-        <img src="img/logo.svg" width="165" height="35" alt="DEVICE">
+        <img src="img/logo-colored.svg" width="165" height="35" alt="DEVICE">
 
-        <ul class="user-navigation">
-          <li class="user-login">
-            <a href="login.html">Войти</a>
+        <ul class="user open-sans-light">
+          <li>
+            <a class="user-interaction user-login" href="login.html">Войти</a>
           </li>
         </ul>
 
-        <ul class="shopping-cart">
-          <li class="shopping-item">
-            <a href="compare.html">Сравнить</a>
+        <ul class="shopping open-sans-light">
+          <li>
+            <a class="shopping-item" href="compare.html">Сравнить</a>
           </li>
-          <li class="shopping-item">
-            <a href="cart.html">Корзина</a>
+          <li>
+            <a class="shopping-item" href="cart.html">Корзина</a>
           </li>
         </ul>
 
-        <p class="adress">г. Москва, ул. Строителей, 15</p>
+        <p class="adress open-sans-light">г. Москва, ул. Строителей, 15</p>
 
         <ul class="information">
-          <li class="information-card navigation-item">
-            <a href="delivery.html">Доставка</a>
+          <li class="information-card">
+            <a class="navigation-item" href="delivery.html">Доставка</a>
           </li>
-          <li class="information-card navigation-item">
-            <a href="guarantee.html">Гарантия</a>
+          <li class="information-card">
+            <a class="navigation-item" href="guarantee.html">Гарантия</a>
           </li>
-          <li class="information-card navigation-item">
-            <a href="contacts.html">Контакты</a>
+          <li class="information-card">
+            <a class="navigation-item" href="contacts.html">Контакты</a>
           </li>
         </ul>
 
-        <a class="contacts navigation-item" href="contacts.html">Контакты</a>
-        <p class="number">Тел.: +7 (495) 495-95-95</p>
-        <div class="social">
+        <p class="phone-number open-sans-light">Тел.: +7 (495) 495-95-95</p>
+
+        <div class="footer-social">
           <ul>
             <li><a class="social-button" href="#">Facebook</a></li>
             <li><a class="social-button" href="#">Instagram</a></li>
@@ -278,7 +289,7 @@
           </ul>
         </div>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/htmlacademy-logo.svg" width="27" height="35" alt="html academy">
+          <img class="logo" src="img/htmlacademy-logo.svg" width="27" height="35" alt="html academy">
         </a>
       </div>
     </footer>

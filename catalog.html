@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -13,32 +14,32 @@
         </a>
         <form class="search-form" method="get">
           <p>
-            <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="search-btn visually-hidden" type="submit">Найти</button>
+            <input class="search open-sans-light" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="search-btn open-sans-light" type="submit">Найти</button>
           </p>
         </form>
 
-        <ul class="user-navigation">
+        <ul class="user open-sans-light">
           <li class="user-name">
-            <a href="#">Валентин Петухов</a>
+            <a class="navigation-item"  href="#">Валентин Петухов</a>
           </li>
           <li class="user-logout">
-            <a href="#">Выйти</a>
+            <a class="navigation-item"  href="#">Выйти</a>
           </li>
         </ul>
 
-        <ul class="shopping-cart">
-          <li class="shopping-item navigation-item">
-            <a href="compare.html">Сравнить</a>
+        <ul class="shopping open-sans-light">
+          <li class="shopping-item">
+            <a class="navigation-item" href="compare.html">Сравнить</a>
           </li>
-          <li class="shopping-item navigation-item">
-            <a href="cart.html">Корзина</a>
+          <li class="shopping-item">
+            <a class="navigation-item" href="cart.html">Корзина</a>
           </li>
         </ul>
 
-        <button class="goods-catalog navigation-item">Каталог товаров</button>
+        <a class="navigation-item goods-catalog" href="catalog.html">Каталог товаров</a>
 
-        <div class="goods-list">
+        <div class="goods-list open-sans-light">
           <nav class="goods-navigation">
             <a class="goods-item" href="virtual-reality.html">Виртуальная реальность</a>
             <a class="goods-item" href="fitness-bracelets.html">Фитнес браслеты</a>
@@ -54,14 +55,14 @@
         </div>
 
         <ul class="information">
-          <li class="information-card navigation-item">
-            <a href="delivery.html">Доставка</a>
+          <li class="information-card">
+            <a class="navigation-item" href="delivery.html">Доставка</a>
           </li>
-          <li class="information-card navigation-item">
-            <a href="guarantee.html">Гарантия</a>
+          <li class="information-card">
+            <a class="navigation-item" href="guarantee.html">Гарантия</a>
           </li>
-          <li class="information-card navigation-item">
-            <a href="contacts.html">Контакты</a>
+          <li class="information-card">
+            <a class="navigation-item" href="contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -70,16 +71,16 @@
     <main class="container">
       <h2 class="page-title">Моноподы для селфи</h2>
 
-        <ul class="breadcrumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог товаров</a></li>
-          <li class="current">Моноподы для селфи</li>
-        </ul>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог товаров</a></li>
+        <li class="current">Моноподы для селфи</li>
+      </ul>
 
       <section class="filters">
         <h4 class="filter-title">Фильтр:</h4>
         <form class="filter-form" method="get">
-          <fieldset>
+          <fieldset class="filter-price">
             <legend>Стоимость</legend>
             <div class="slider">
               <div class="left-slide">
@@ -92,7 +93,7 @@
               </p>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-color">
             <legend>Цвет</legend>
             <ul>
               <li>
@@ -101,19 +102,23 @@
               </li>
               <li>
                 <input type="checkbox" id="white-color" name="white-color">
-                <label for="white-color">Белый</label></li>
+                <label for="white-color">Белый</label>
+              </li>
               <li>
                 <input type="checkbox" id="blue-color" name="blue-color" checked>
-                <label for="blue-color">Синий</label></li>
+                <label for="blue-color">Синий</label>
+              </li>
               <li>
                 <input type="checkbox" id="red-color" name="red-color" checked>
-                <label for="red-color">Красный</label></li>
-              <li>
+                <label for="red-color">Красный</label>
+              </li>
+              <li disabled>
                 <input type="checkbox" id="pink-color" name="pink-color">
-                <label for="pink-color">Розовый</label></li>
+                <label for="pink-color">Розовый</label>
+              </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-bluetooth">
             <legend>Bluetooth</legend>
             <ul>
               <li>
@@ -164,8 +169,8 @@
               <span class="item-price">500 руб.</span>
             </p>
             <div class="item-additional">
-              <a href="?cart-item=selfie-1">В корзину</a>
-              <a href="?compare=selfie-1">Добавить к сравнению</a>
+              <a class="primary-button" href="?cart-item=selfie-1">В корзину</a>
+              <a class="compare-button" href="?compare=selfie-1">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -175,8 +180,8 @@
               <span class="item-price">1 500 руб.</span>
             </p>
             <div class="item-additional">
-              <a href="?cart-item=selfie-2">В корзину</a>
-              <a href="?compare=selfie-2">Добавить к сравнению</a>
+              <a class="primary-button" href="?cart-item=selfie-2">В корзину</a>
+              <a class="compare-button" href="?compare=selfie-2">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -186,8 +191,8 @@
               <span class="item-price">2 500 руб.</span>
             </p>
             <div class="item-additional">
-              <a href="?cart-item=selfie-3">В корзину</a>
-              <a href="?compare=selfie-3">Добавить к сравнению</a>
+              <a class="primary-button" href="?cart-item=selfie-3">В корзину</a>
+              <a class="compare-button" href="?compare=selfie-3">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -197,20 +202,20 @@
               <span class="item-price">4 900 руб.</span>
             </p>
             <div class="item-additional">
-              <a href="?cart-item=selfie-4">В корзину</a>
-              <a href="?compare=selfie-4">Добавить к сравнению</a>
+              <a class="primary-button" href="?cart-item=selfie-4">В корзину</a>
+              <a class="compare-button" href="?compare=selfie-4">Добавить к сравнению</a>
             </div>
           </li>
         </ul>
 
         <div class="pagination">
-          <button class="back-button" type="button">Назад</button>
+          <button class="pagination-button" type="button">Назад</button>
           <ul class="pagination-list">
             <li class="pagination-item selected"><a href="#">1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
           </ul>
-          <button class="back-button" type="button">Вперед</button>
+          <button class="pagination-button" type="button">Вперед</button>
         </div>
       </section>
     </main>
@@ -218,43 +223,44 @@
     <footer class="footer">
         <div class="container">
           <a class="logo" href="index.html">
-            <img src="img/logo.svg" width="165" height="35" alt="DEVICE">
+            <img src="img/logo-colored.svg" width="165" height="35" alt="DEVICE">
           </a>
 
-          <ul class="user-navigation">
-            <li class="user-name">
-              <a href="#">Валентин Петухов</a>
+          <ul class="user open-sans-light">
+            <li>
+              <a class="user-interaction user-name" href="#">Валентин Петухов</a>
             </li>
-            <li class="user-logout">
-              <a href="#">Выйти</a>
-            </li>
-          </ul>
-
-          <ul class="shopping-cart">
-            <li class="shopping-item">
-              <a href="compare.html">Сравнить</a>
-            </li>
-            <li class="shopping-item">
-              <a href="cart.html">Корзина</a>
+            <li>
+              <a class="user-interaction user-logout" href="#">Выйти</a>
             </li>
           </ul>
 
-          <p class="adress">г. Москва, ул. Строителей, 15</p>
+          <ul class="shopping open-sans-light">
+            <li>
+              <a class="shopping-item" href="compare.html">Сравнить</a>
+            </li>
+            <li>
+              <a class="shopping-item" href="cart.html">Корзина</a>
+            </li>
+          </ul>
 
-        <ul class="information">
-          <li class="information-card navigation-item">
-            <a href="delivery.html">Доставка</a>
-          </li>
-          <li class="information-card navigation-item">
-            <a href="guarantee.html">Гарантия</a>
-          </li>
-          <li class="information-card navigation-item">
-            <a href="contacts.html">Контакты</a>
-          </li>
-        </ul>
+          <p class="adress open-sans-light">г. Москва, ул. Строителей, 15</p>
 
-          <p class="number">Тел.: +7 (495) 495-95-95</p>
-          <div class="social">
+          <ul class="information">
+            <li class="information-card">
+              <a class="navigation-item" href="delivery.html">Доставка</a>
+            </li>
+            <li class="information-card">
+              <a class="navigation-item" href="guarantee.html">Гарантия</a>
+            </li>
+            <li class="information-card">
+              <a class="navigation-item" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+
+          <p class="number open-sans-light">Тел.: +7 (495) 495-95-95</p>
+
+          <div class="footer-social">
             <ul>
               <li><a class="social-button" href="#">Facebook</a></li>
               <li><a class="social-button" href="#">Instagram</a></li>
@@ -262,7 +268,7 @@
             </ul>
           </div>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/htmlacademy-logo.svg" width="27" height="35" alt="html academy">
+            <img class="logo" src="img/htmlacademy-logo.svg" width="27" height="35" alt="html academy">
           </a>
         </div>
       </footer>
