@@ -9,7 +9,7 @@
 
     <header class="header container">
       <nav class="main-navigation">
-        <img src="img/logo.svg" width="165" height="35" alt="DEVICE">
+        <img src="img/logo.svg" width="163" height="36" alt="DEVICE">
         <div class="header-user-wrapper">
           <form class="search-form" method="get">
             <input class="search" type="search" name="search" placeholder="Поиск по сайту">
@@ -17,17 +17,17 @@
           </form>
 
           <ul class="user">
-            <li class="user-login">
-              <a class="navigation-item" href="login.html">Войти</a>
+            <li>
+              <a class="navigation-item user-login" href="login.html">Войти</a>
             </li>
           </ul>
 
           <ul class="shopping">
-            <li class="shopping-item">
-              <a class="navigation-item" href="compare.html">Сравнить</a>
+            <li>
+              <a class="navigation-item shopping-compare" href="compare.html">Сравнить</a>
             </li>
-            <li class="shopping-item">
-              <a class="navigation-item" href="cart.html">Корзина</a>
+            <li>
+              <a class="navigation-item shopping-cart" href="cart.html">Корзина</a>
             </li>
           </ul>
         </div>
@@ -59,7 +59,7 @@
             <li class="information-card">
               <a class="navigation-item" href="guarantee.html">Гарантия</a>
             </li>
-            <li class="information-card">
+            <li class="information-card info-contacts">
               <a class="navigation-item" href="contacts.html">Контакты</a>
             </li>
           </ul>
@@ -75,65 +75,68 @@
 
         <h2 class="visually-hidden">Новинки</h2>
 
-        <input class="new-item-radio" type="radio" name="new-item" aria-label="Новая селфи-палка">
-        <div class="new-item">
-          <img class="new-item-image" src="img/new-selfie.png" width="526" height="497" alt="Селфи-палка">
-          <div class="new-item-info-wrapper">
-            <h3 class="new-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
-            <p class="new-item-body">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <button class="primary-button">Подробнее</button>
-            <table class="new-item-benefits">
-              <tr class="value">
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-              <tr class="key">
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
-              </tr>
-            </table>
-          </div>
-        </div>
+        <input class="new-item-radio active visually-hidden" type="radio" name="new-item" id="new-item-1" checked aria-label="Новая селфи-палка">
+        <input class="new-item-radio visually-hidden" type="radio" name="new-item" id="new-item-2"  aria-label="Новый фитнес-браслет">
+        <input class="new-item-radio visually-hidden" type="radio" name="new-item" id="new-item-3" aria-label="Новый квадрокоптер">
 
-        <input class="new-item-radio" type="radio" name="new-item" aria-label="Новый фитнес-браслет">
-        <div class="new-item">
-          <img class="new-item-image" src="img/new-bracelet.png" width="526" height="497" alt="Фитнес-браслет">
-          <div class="new-item-info-wrapper">
-            <h3 class="new-item-title">Худеем<br>правильно!</h3>
-            <p class="new-item-body">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <button class="primary-button">Подробнее</button>
-            <table class="new-item-benefits">
-              <tr class="value">
-                <td>48 часов</td>
-              </tr>
-              <tr class="key">
-                <td>Без подзарядки</td>
-              </tr>
-            </table>
-          </div>
-        </div>
+        <ul class="new-items-slider-list">
+          <li class="new-item">
+            <img class="new-item-image" src="img/new-selfie.png" width="526" height="497" alt="Селфи-палка">
+            <div class="new-item-info-wrapper" data-number="01">
+              <h3 class="new-item-title">Делай селфи,<br>как Бен Стиллер!</h3>
+              <p class="new-item-body">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <button class="primary-button">Подробнее</button>
+              <table class="new-item-benefits">
+                <tr class="benefits-value">
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr class="benefits-key">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+          </li>
 
-        <input class="new-item-radio" type="radio" name="new-item" aria-label="Новый квадрокоптер">
-        <div class="new-item">
-          <img class="new-item-image" src="img/new-quadro.png" width="526" height="497" alt="Квадрокоптер">
-          <div class="new-item-info-wrapper">
-            <h3 class="new-item-title">Порхает как бабочка,<br>жалит как пчела!</h3>
-            <p class="new-item-body">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
-            <button class="primary-button">Подробнее</button>
-            <table class="new-item-benefits">
-              <tr class="value">
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-              <tr class="key">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
-              </tr>
-            </table>
-          </div>
-        </div>
+          <li class="new-item">
+            <img class="new-item-image" src="img/new-bracelet.png" width="526" height="497" alt="Фитнес-браслет">
+            <div class="new-item-info-wrapper" data-number="02">
+              <h3 class="new-item-title">Худеем<br>правильно!</h3>
+              <p class="new-item-body">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <button class="primary-button">Подробнее</button>
+              <table class="new-item-benefits">
+                <tr class="value">
+                  <td>48 часов</td>
+                </tr>
+                <tr class="key">
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+
+          <li class="new-item">
+            <img class="new-item-image" src="img/new-quadro.png" width="526" height="497" alt="Квадрокоптер">
+            <div class="new-item-info-wrapper" data-number="03">
+              <h3 class="new-item-title">Порхает как бабочка,<br>жалит как пчела!</h3>
+              <p class="new-item-body">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
+              <button class="primary-button">Подробнее</button>
+              <table class="new-item-benefits">
+                <tr class="value">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr class="key">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
 
       </section>
 
@@ -151,9 +154,9 @@
           <li class="popular-item">
             <a href="selfie-monopods.html">
               <div class="popular-item-image-cont">
-                <img class="popular-item-image" src="img/popular-monos.svg" width="86" height="117" alt="Моноподы для селфи">
+                <img class="popular-item-image popular-monos" src="img/popular-monos.svg" width="86" height="117" alt="Моноподы для селфи">
               </div>
-              <p class="popular-item-title">Моноподы для селфи</p>
+              <p class="popular-item-title">Моноподы<br>для селфи</p>
             </a>
           </li>
           <li class="popular-item">
@@ -200,15 +203,15 @@
             <button class="primary-button service-button" type="button">Кредит</button>
           </div>
           <div class="service-descriptions">
-            <div class="service-card selected">
+            <div class="service-card service-card-delivery selected">
               <h3 class="service-card-title">Доставка</h3>
               <p class="service-card-body">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card service-card-guarantee">
               <h3 class="service-card-title">Гарантия</h3>
               <p class="service-card-body">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
             </div>
-            <div class="service-card">
+            <div class="service-card service-card-credit">
               <h3 class="service-card-title">Кредит</h3>
               <p class="service-card-body">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             </div>
@@ -222,13 +225,13 @@
           <li class="brand-logo brand-logo-1">
             <img src="img/partner-logo-1.jpg" width="260" height="100" alt="DJI">
           </li>
-          <li class="brand-logo">
+          <li class="brand-logo brand-logo-2">
             <img src="img/partner-logo-2.jpg" width="260" height="100" alt="SP gadgets">
           </li>
-          <li class="brand-logo">
+          <li class="brand-logo brand-logo-3">
             <img src="img/partner-logo-3.jpg" width="260" height="100" alt="Go Pro">
           </li>
-          <li class="brand-logo">
+          <li class="brand-logo brand-logo-4">
             <img src="img/partner-logo-4.jpg" width="260" height="100" alt="Vive">
           </li>
         </ul>
@@ -264,18 +267,18 @@
           <img src="img/logo-colored.svg" width="165" height="35" alt="DEVICE">
 
           <div class="footer-user-wrapper">
-            <ul class="user">
+            <ul class="user footer-user">
               <li>
                 <a class="user-interaction user-login" href="login.html">Войти</a>
               </li>
             </ul>
 
-            <ul class="shopping">
+            <ul class="shopping footer-shopping">
               <li>
-                <a class="shopping-item" href="compare.html">Сравнить</a>
+                <a class="shopping-item shopping-compare" href="compare.html">Сравнить</a>
               </li>
               <li>
-                <a class="shopping-item" href="cart.html">Корзина</a>
+                <a class="shopping-item shopping-cart" href="cart.html">Корзина</a>
               </li>
             </ul>
           </div>
@@ -302,13 +305,13 @@
         <div class="footer-social-wrapper">
           <div class="footer-social">
             <ul>
-              <li><a class="social-button" href="#">Facebook</a></li>
-              <li><a class="social-button" href="#">Instagram</a></li>
-              <li><a class="social-button" href="#">Twitter</a></li>
+              <li><a class="social-button facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+              <li><a class="social-button instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
+              <li><a class="social-button twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
             </ul>
           </div>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="logo" src="img/htmlacademy-logo.svg" width="27" height="35" alt="html academy">
+            <img class="html-logo" src="img/htmlacademy-logo.svg" width="27" height="35" alt="html academy">
           </a>
         </div>
       </div>
