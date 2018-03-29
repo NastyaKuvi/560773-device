@@ -32,7 +32,6 @@
 
 *, *::before, *::after {
   box-sizing: inherit;
-  /* outline: 1px dotted grey; */
 }
 
 html {
@@ -47,8 +46,7 @@ img {
 body {
   margin: 0;
   padding: 0;
-  /* min-width: 1200px; */
-  min-width: 1440px;
+  min-width: 1200px;
   min-height: 1795px;
 
   font-family: 'Gilroy-extrabold', Arial, sans-serif;
@@ -470,7 +468,7 @@ a {
 
 .new-items-radio {
   position: absolute;
-  bottom: 145px;
+  bottom: 139px;
   right: 83px;
   z-index: 20;
 }
@@ -479,6 +477,7 @@ a {
   position: relative;
   margin-left: 16px;
   display: inline-block;
+  vertical-align: top;
 
   width: 12px;
   height: 12px;
@@ -493,9 +492,9 @@ a {
   cursor: pointer;
 }
 
-#new-item-1:checked ~ .new-items-radio .radio-new-label:nth-child(1),
-#new-item-2:checked ~ .new-items-radio .radio-new-label:nth-child(2),
-#new-item-3:checked ~ .new-items-radio .radio-new-label:nth-child(3) {
+.new-item-1:checked ~ .new-items-radio .radio-new-label:nth-child(1),
+.new-item-2:checked ~ .new-items-radio .radio-new-label:nth-child(2),
+.new-item-3:checked ~ .new-items-radio .radio-new-label:nth-child(3) {
   background-image: url('../img/slider-button.svg');
 }
 
@@ -514,9 +513,9 @@ a {
   justify-content: space-between;
 }
 
-#new-item-1:checked ~ .new-items-slider-list .new-item:nth-child(1),
-#new-item-2:checked ~ .new-items-slider-list .new-item:nth-child(2),
-#new-item-3:checked ~ .new-items-slider-list .new-item:nth-child(3) {
+.new-item-1:checked ~ .new-items-slider-list .new-item:nth-child(1),
+.new-item-2:checked ~ .new-items-slider-list .new-item:nth-child(2),
+.new-item-3:checked ~ .new-items-slider-list .new-item:nth-child(3) {
   display: flex;
 }
 
@@ -1429,6 +1428,8 @@ a {
   display: inline-block;
   width: 41%;
 
+  vertical-align: top;
+
   font-family: 'Gilroy-light', Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -1514,6 +1515,11 @@ a {
 .checkbox-bluetooth-label input[type="radio"]:hover + .checkbox-indicator,
 .checkbox-bluetooth-label input[type="radio"]:focus + .checkbox-indicator {
   opacity: 0.6;
+}
+
+.checkbox-color-label input[type="checkbox"]:disabled + .checkbox-indicator,
+.checkbox-bluetooth-label input[type="radio"]:disabled + .checkbox-indicator {
+  opacity: 0.2;
 }
 
 .checkbox-bluetooth-label input[type="radio"] + .checkbox-indicator {
@@ -1773,7 +1779,7 @@ background-color: rgba(0, 0, 0, 0.08);
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 
-  color: #000000;
+  color: rgb(0, 0, 0);
 
   background-color: rgb(255, 255, 255);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

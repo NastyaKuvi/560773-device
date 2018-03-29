@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -77,9 +78,9 @@
 
         <h2 class="visually-hidden">Новинки</h2>
 
-        <input class="visually-hidden" type="radio" name="new-item" id="new-item-1" aria-label="Новая селфи-палка" checked>
-        <input class="visually-hidden" type="radio" name="new-item" id="new-item-3" aria-label="Новый фитнес-браслет">
-        <input class="visually-hidden" type="radio" name="new-item" id="new-item-2" aria-label="Новый квадрокоптер">
+        <input class="visually-hidden new-item-1" type="radio" name="new-item" id="new-item-1" aria-label="Новая селфи-палка" checked>
+        <input class="visually-hidden new-item-2" type="radio" name="new-item" id="new-item-2" aria-label="Новый фитнес-браслет">
+        <input class="visually-hidden new-item-3" type="radio" name="new-item" id="new-item-3" aria-label="Новый квадрокоптер">
         <div class="new-items-radio">
           <label class="radio-new-label" for="new-item-1"></label>
           <label class="radio-new-label" for="new-item-2"></label>
@@ -115,10 +116,10 @@
               <p class="new-item-body">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <button class="primary-button">Подробнее</button>
               <table class="new-item-benefits">
-                <tr class="value">
+                <tr class="benefits-value">
                   <td>48 часов</td>
                 </tr>
-                <tr class="key">
+                <tr class="benefits-key">
                   <td>Без подзарядки</td>
                 </tr>
               </table>
@@ -132,11 +133,11 @@
               <p class="new-item-body">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
               <button class="primary-button">Подробнее</button>
               <table class="new-item-benefits">
-                <tr class="value">
+                <tr class="benefits-value">
                   <td>800 м</td>
                   <td>50 м</td>
                 </tr>
-                <tr class="key">
+                <tr class="benefits-key">
                   <td>Дальность полета</td>
                   <td>Радиус поражения</td>
                 </tr>
