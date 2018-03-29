@@ -117,6 +117,8 @@ a {
 }
 
 .main-navigation > img {
+  width: 163px;
+  height: 36px;
   margin-top: -19px;
   margin-bottom: 20px;
 }
@@ -348,7 +350,7 @@ a {
   letter-spacing: 0.2em;
 }
 
-.information-card {
+.information-card:not(:last-child) {
   margin-right: 35px;
 }
 
@@ -427,6 +429,7 @@ a {
 }
 
 .primary-button {
+  width: 220px;
   margin: 0;
   margin-right: auto;
   padding: 15px 42px;
@@ -624,9 +627,12 @@ a {
 
 .popular-item {
   max-width: 160px;
+
+  cursor: pointer;
 }
 
 .popular-item a {
+  pointer-events: none; /*for IE11*/
   color: rgb(0, 0, 0);
 }
 
@@ -964,11 +970,13 @@ a {
 }
 
 .contacts .primary-button {
+  width: 260px;
   margin-top: 55px;
   padding-right: 35px;
 }
 
 .about-us .primary-button {
+  width: 265px;
   padding: 15px 23px;
 }
 
@@ -1004,6 +1012,11 @@ a {
 .footer-logo-user-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-logo-user-wrapper > img {
+  width: 163px;
+  height: 36px;
 }
 
 .catalog-footer-logo {
@@ -1329,6 +1342,7 @@ a {
 }
 
 .filter-form .primary-button {
+  width: 200px;
   padding: 15px 40px;
 }
 
@@ -1663,12 +1677,14 @@ a {
 }
 
 .item-additional .primary-button {
+  width: 203px;
   margin: 0 auto;
   margin-bottom: 8px;
   padding: 15px 37px;
 }
 
 .compare-button {
+  width: 145px; /* for IE11: margin-auto not working without width*/
   margin: 0 auto;
   font-family: 'OpenSans-light', Arial, sans-serif;
   font-size: 13px;
