@@ -39,6 +39,11 @@ html {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -110,7 +115,13 @@ a {
   color: rgb(0, 0, 0);
 }
 
-.main-navigation img {
+.main-navigation > img {
+  margin-top: -19px;
+  margin-bottom: 20px;
+}
+
+
+.main-navigation .logo {
   margin-top: -19px;
   margin-bottom: 20px;
 }
@@ -118,6 +129,10 @@ a {
 .header-user-wrapper {
   display: flex;
   margin-bottom: 25px;
+}
+
+.catalog-body .header-user-wrapper {
+  margin-bottom: 21px;
 }
 
 .search-form {
@@ -239,6 +254,11 @@ a {
   padding-top: 6px;
 }
 
+.user-catalog li,
+.shopping-catalog li {
+  padding-top: 0px;
+}
+
 .user .navigation-item,
 .shopping .navigation-item {
   position: relative;
@@ -303,6 +323,10 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 45px;
+}
+
+.catalog-body .header-conditions-wrapper {
+  margin-bottom: 50px;
 }
 
 .information {
@@ -501,7 +525,7 @@ a {
 .new-item-info-wrapper::before {
   content: '';
   position: absolute;
-  top: 40px;
+  top: 45px;
   left: 0px;
   width: 100px;
   height: 5px;
@@ -511,7 +535,7 @@ a {
 .new-item-info-wrapper::after {
   content: attr(data-number);
   position: absolute;
-  top: -13px;
+  top: -8px;
   right: 45px;
 
   font-size: 179px;
@@ -527,7 +551,7 @@ a {
 }
 
 .new-item-title {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
   z-index: 1;
 
   font-size: 47px;
@@ -736,7 +760,7 @@ a {
 
 .service-card-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   font-size: 47px;
   line-height: 48px;
@@ -930,7 +954,7 @@ a {
 }
 
 .contacts .primary-button {
-  margin-top: 53px;
+  margin-top: 55px;
   padding-right: 35px;
 }
 
@@ -940,7 +964,8 @@ a {
 
 .footer {
   position: relative;
-  padding-top: 60px;
+  padding-top: 50px;
+  padding-bottom: 60px;
 
   background-color: rgb(70, 70, 70);
   color: rgb(255, 255, 255);
@@ -969,11 +994,14 @@ a {
 .footer-logo-user-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 13px;
 }
 
-.footer-logo-user-wrapper img {
-  margin-top: 7px;
+.catalog-footer-logo {
+  padding-top: 15px;
+}
+
+.catalog-body .footer-logo-user-wrapper {
+  margin-bottom: 20px;
 }
 
 .footer-user-wrapper {
@@ -987,6 +1015,7 @@ a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 
   font-size: 15px;
   line-height: 36px;
@@ -1160,7 +1189,7 @@ a {
 .page-title {
   padding: 0 60px;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 38px;
   margin-bottom: 24px;
 
   font-size: 47px;
@@ -1230,7 +1259,7 @@ a {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  margin-bottom: 77px;
+  margin-bottom: 72px;
 }
 
 .filters-wrapper {
@@ -1437,7 +1466,7 @@ a {
 
 .sorting {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .sorting-title {
   margin-right: 50px;
@@ -1523,7 +1552,8 @@ a {
   position: relative;
   width: 360px;
   margin-right: 40px;
-  margin-bottom: 28px; 
+  margin-bottom: 18px;
+  margin-top: 10px;
 }
 
 .catalog-item:nth-child(2n) {
@@ -1617,7 +1647,7 @@ a {
 }
 
 .pagination-button {
-  padding: 15px 30px;
+  padding: 23px 30px;
 }
 
 .pagination-button:hover {
