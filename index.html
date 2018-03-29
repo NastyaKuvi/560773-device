@@ -12,8 +12,10 @@
         <img src="img/logo.svg" width="163" height="36" alt="DEVICE">
         <div class="header-user-wrapper">
           <form class="search-form" method="get">
-            <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="search-btn" type="submit">Найти</button>
+            <p>
+              <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="search-btn" type="submit">Найти</button>
+            </p>
           </form>
 
           <ul class="user">
@@ -320,14 +322,16 @@
     <section class="modal modal-form-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="write-us-form" method="post">
-        <p class="form-user-name">
-          <label for="write-us-user-name">Ваше имя:</label>
-          <input type="text" name="user-name" id="write-us-user-name" placeholder="Имя Фамилия">
-        </p>
-        <p class="form-user-email">
-          <label for="write-us-user-email">Ваш e-mail:</label>
-          <input type="email" name="user-email" id="write-us-user-email" placeholder="email@example.com">
-        </p>
+        <div class="write-us-user-wrapper">
+          <p class="form-user-name">
+            <label for="write-us-user-name">Ваше имя:</label>
+            <input type="text" name="user-name" id="write-us-user-name" placeholder="Имя Фамилия">
+          </p>
+          <p class="form-user-email">
+            <label for="write-us-user-email">Ваш e-mail:</label>
+            <input type="email" name="user-email" id="write-us-user-email" placeholder="email@example.com">
+          </p>
+        </div>
         <p class="form-user-letter">
           <label for="write-us-user-letter">Текст письма:</label>
           <textarea name="user-letter" id="write-us-user-letter" placeholder="В свободной форме"></textarea>
@@ -339,7 +343,7 @@
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map-big.jpg" width="960" height="559"
+        <img src="img/map-big.jpg" width="960" height="560"
           alt="Мы находимся в г. Москва, ул. Строителей, 15">
         <button class="modal-close" type="button">Закрыть</button>
     </section>

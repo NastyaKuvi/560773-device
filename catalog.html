@@ -14,8 +14,10 @@
         </a>
         <div class="header-user-wrapper">
           <form class="search-form" method="get">
-            <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="search-btn" type="submit">Найти</button>
+            <p>
+              <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="search-btn" type="submit">Найти</button>
+            </p>
           </form>
 
           <ul class="user">
@@ -91,39 +93,55 @@
             <form class="filter-form" method="get">
               <fieldset class="filter-price">
                 <legend class="filter-legend">Стоимость</legend>
-                <!-- <div class="slider">
-                  <div class="left-slide">
-                    <button class="slider-limit" aria-label="Цена от"></button>
-                    <p class="slider-label">от 0</p>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
-                  <div class="right-slide">
-                    <button class="slider-limit" aria-label="Цена до"></button>
-                    <p class="slider-label">до 5000</p>
-                  </p>
-                </div> -->
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <span class="min-price">от 0</span>
+                  <span class="max-price">до 5000</span>
+                </div>
               </fieldset>
               <fieldset class="filter-color">
                 <legend class="filter-legend">Цвет</legend>
                 <ul>
                   <li>
-                    <input type="checkbox" id="black-color" name="black-color" checked>
-                    <label for="black-color">Черный</label>
+                    <label class="checkbox-color-label">
+                      <input type="checkbox" name="black-color" class="visually-hidden" checked>
+                      <span class="checkbox-indicator"></span>
+                        Черный
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="white-color" name="white-color">
-                    <label for="white-color">Белый</label>
+                    <label class="checkbox-color-label">
+                      <input type="checkbox" name="white-color" class="visually-hidden">
+                      <span class="checkbox-indicator"></span>
+                        Белый
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="blue-color" name="blue-color" checked>
-                    <label for="blue-color">Синий</label>
+                    <label class="checkbox-color-label">
+                      <input type="checkbox" name="blue-color" class="visually-hidden" checked>
+                      <span class="checkbox-indicator"></span>
+                        Синий 
+                    </label>
                   </li>
                   <li>
-                    <input type="checkbox" id="red-color" name="red-color" checked>
-                    <label for="red-color">Красный</label>
+                    <label class="checkbox-color-label">
+                      <input type="checkbox" name="red-color" class="visually-hidden" checked>
+                      <span class="checkbox-indicator"></span>
+                        Красный
+                    </label>
                   </li>
-                  <li disabled>
-                    <input type="checkbox" id="pink-color" name="pink-color">
-                    <label for="pink-color">Розовый</label>
+                  <li>
+                    <label class="checkbox-color-label">
+                      <input type="checkbox" name="pink-color" class="visually-hidden">
+                      <span class="checkbox-indicator"></span>
+                        Розовый
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -131,12 +149,18 @@
                 <legend class="filter-legend">Bluetooth</legend>
                 <ul>
                   <li>
-                    <input type="radio" id="bluetooth-yes" name="bluetooth" aria-label="есть bluetooth" checked>
-                    <label for="bluetooth-yes">Есть</label>
+                    <label class="checkbox-bluetooth-label">
+                      <input type="radio" name="bluetooth" class="visually-hidden" checked>
+                      <span class="checkbox-indicator"></span>
+                        Есть
+                    </label>
                   </li>
                   <li>
-                    <input type="radio" id="bluetooth-no" name="bluetooth" aria-label="нет bluetooth">
-                    <label for="bluetooth-no">Нет</label>
+                    <label class="checkbox-bluetooth-label">
+                      <input type="radio" name="bluetooth" class="visually-hidden">
+                      <span class="checkbox-indicator"></span>
+                        Нет
+                    </label>
                   </li>
                 </ul>
               </fieldset>
