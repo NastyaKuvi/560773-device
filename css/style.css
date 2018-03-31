@@ -49,7 +49,6 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
-  min-height: 1795px;
 
   font-family: 'Gilroy-extrabold', Arial, sans-serif;
   font-size: 18px;
@@ -183,47 +182,39 @@ a {
 }
 
 .search::-webkit-input-placeholder {
-  color: rgb(0, 0, 0);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search:-ms-input-placeholder {
-  color: rgb(0, 0, 0);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search::-ms-input-placeholder {
-  color: rgb(0, 0, 0);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search::placeholder {
-  color: rgb(0, 0, 0);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search:hover::-webkit-input-placeholder,
 .search:focus::-webkit-input-placeholder {
-  color: rgba(0, 0, 0);
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search:hover:-ms-input-placeholder,
 .search:focus:-ms-input-placeholder {
-  color: rgba(0, 0, 0);
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search:hover::-ms-input-placeholder,
 .search:focus::-ms-input-placeholder {
-  color: rgba(0, 0, 0);
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search:hover::placeholder,
 .search:focus::placeholder {
-  color: rgba(0, 0, 0);
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search:focus {
@@ -436,16 +427,6 @@ a {
   position: relative;
 }
 
-.header-goods-wrapper:hover .goods-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* .header-goods-wrapper .goods-catalog:focus + .goods-list {
-  display: flex;
-} */
-
 .goods-list {
   width: 1160px;
   position: absolute;
@@ -458,7 +439,13 @@ a {
   z-index: 2;
 
   background: rgb(247, 226, 150);
-  /* background: powderblue; */
+}
+
+.header-goods-wrapper:hover .goods-list,
+.navigation-item.goods-catalog:focus ~ .goods-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .goods-navigation {
@@ -821,14 +808,10 @@ a {
   text-align: center;
 }
 
-.service-button.selected {
+.service-button.selected,
+.service-button:active {
   width: 100%;
   padding-right: 135px;
-  background: rgb(0, 0, 0);
-  color: rgb(247, 225, 132);
-}
-
-.service-button:active {
   background: rgb(0, 0, 0);
   color: rgb(247, 225, 132);
 }
@@ -1138,6 +1121,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1146,6 +1130,7 @@ a {
 .footer-logo-user-wrapper > img {
   width: 163px;
   height: 36px;
+  margin-top: 15px;
 }
 
 .catalog-footer-logo {
@@ -1323,7 +1308,7 @@ a {
 }
 
 .phone-number {
-  width: 165;
+  width: 165px;
 }
 
 .adress,
@@ -2071,7 +2056,7 @@ background-color: rgba(0, 0, 0, 0.08);
 
   font-size: 18px;
   line-height: 24px;
-  font-weight: 800px;
+  font-weight: 800;
   letter-spacing: 0;
 }
 
