@@ -82,9 +82,9 @@
         <input class="visually-hidden new-item-2" type="radio" name="new-item" id="new-item-2" aria-label="Новый фитнес-браслет">
         <input class="visually-hidden new-item-3" type="radio" name="new-item" id="new-item-3" aria-label="Новый квадрокоптер">
         <div class="new-items-radio">
-          <label class="radio-new-label" for="new-item-1"></label>
-          <label class="radio-new-label" for="new-item-2"></label>
-          <label class="radio-new-label" for="new-item-3"></label>
+          <label class="radio-new-label" for="new-item-1" aria-label="Новая селфи-палка"></label>
+          <label class="radio-new-label" for="new-item-2" aria-label="Новый фитнес-браслет"></label>
+          <label class="radio-new-label" for="new-item-3" aria-label="Новый квадрокоптер"></label>
         </div>
 
         <ul class="new-items-slider-list">
@@ -255,7 +255,7 @@
             <li><b>Автотрейдинг</b></li>
             <li><b>ЖелДорЭкспедиция</b></li>
           </ul>
-          <button class="primary-button">Подробнее о нас</button>
+          <a class="primary-button" href="about-us.html">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
@@ -264,7 +264,7 @@
           <a class="contacts-map" href="adress.html">
             <img src="img/map.jpg" width="560" height="222" alt="Карта">
           </a>
-          <button class="primary-button">Напишите нам</button>
+          <a class="primary-button write-us-button" href="write-us.html">Напишите нам</a>
         </section>
       </div>
     </main>
@@ -349,8 +349,11 @@
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map-big.jpg" width="960" height="560"
-          alt="Мы находимся в г. Москва, ул. Строителей, 15">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBqEy4RngD" width="960" height="560" frameborder="0"></iframe>
+        <p>
+          <img src="img/map-big.jpg" width="960" height="560"
+            alt="Мы находимся в г. Москва, ул. Строителей, 15">
+        </p>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
 
